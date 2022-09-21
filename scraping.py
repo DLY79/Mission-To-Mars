@@ -125,10 +125,12 @@ def hemisphere_scrape(browser):
         
         #store in dictionary and append to a list
         hemispheres = {}
-        hemispheres['img_url'] = f'https://marshemispheres.com/{img_url}'
+        hemispheres['img_url'] = f'{img_url}'
         hemispheres['title'] = title
         hemisphere_image_urls.append(hemispheres)
     
+    # print(hemisphere_image_urls)
+
     return hemisphere_image_urls 
     
 if __name__ == "__main__":
